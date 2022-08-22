@@ -1,20 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import  'bootstrap/dist/css/bootstrap.min.css'
-import NavScrollExample from './components/Navbar/index'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import NavScrollExample from './components/Navbar/NavBar'
+import ItemListContainer from './containers/ItemListContainer';
 
 
 function App() {
   return (
     <div className="App">
       <NavScrollExample />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          TIENDA DE VINILOS
-        </p>
-        
-      </header>
+      <ItemListContainer greeting="Tienda de Vinilos" />
+  
     </div>
   );
 }

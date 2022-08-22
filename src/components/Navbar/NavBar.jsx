@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import CartWidjet from './CartWidjet';
 
 
 
@@ -20,17 +21,14 @@ function NavScrollExample() {
           >
             <Nav.Link href="#action1">Inicia sesión</Nav.Link>
             <Nav.Link href="#action2">Registrate</Nav.Link>
-            <Nav.Link href="#action3"><img src="carrito.png" className="App-carrito" alt="carrito" /></Nav.Link>
-            
+            <Nav.Link href="#action3"><CartWidjet /></Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
               type="search"
               placeholder="Buscar en la tienda..."
               className="me-2"
-              aria-label="Search"
-              
-            />
+              aria-label="Search"/>
             <Button variant="outline-dark">Buscar</Button>
           </Form>
         </Navbar.Collapse>
